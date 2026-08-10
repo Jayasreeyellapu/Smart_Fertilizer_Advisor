@@ -7,3 +7,4 @@ uvicorn
 openpyxl
 joblib
 python-multipart
+fpdf2
