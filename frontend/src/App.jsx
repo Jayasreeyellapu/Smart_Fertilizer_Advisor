@@ -24,7 +24,7 @@ function AppContent() {
     setResult(null);
     try {
       // Ensure backend is running at localhost:8000
-      const response = await axios.post('http://localhost:8000/predict', formData);
+      const response = await axios.post('https://smart-fertilizer-advisor-djrd.onrender.com/predict', formData);
       setResult({ ...response.data, landArea: formData.landArea });
       navigate('/result');
     } catch (err) {
